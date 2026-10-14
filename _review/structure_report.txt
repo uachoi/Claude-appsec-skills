@@ -1,0 +1,255 @@
+# Structure Verification Report
+
+## S1. 파일 존재
+- ✅ SKILL.md: sec-scan-auth\SKILL.md
+- ✅ commands: .claude\commands\sec-scan-auth.md
+- ✅ task_26: sec-scan-auth\references\task_prompts\task_26_auth_review.md
+- ✅ dast_candidates: sec-scan-auth\references\dast_candidates.md
+- ✅ m0_auth_recon: sec-scan-auth\references\modules\m0_auth_recon.md
+- ✅ m1_authn: sec-scan-auth\references\modules\m1_authn.md
+- ✅ m2_authz_acl: sec-scan-auth\references\modules\m2_authz_acl.md
+- ✅ m3_stepup_mfa: sec-scan-auth\references\modules\m3_stepup_mfa.md
+- ✅ m4_logic_race: sec-scan-auth\references\modules\m4_logic_race.md
+- ✅ m5_webview_client: sec-scan-auth\references\modules\m5_webview_client.md
+- ✅ auth_methodology: sec-scan-auth\references\methodology\auth_methodology.md
+- ✅ acl_methodology: sec-scan-auth\references\methodology\acl_methodology.md
+- ✅ race_condition_methodology: sec-scan-auth\references\methodology\race_condition_methodology.md
+- ✅ webview_session_methodology: sec-scan-auth\references\methodology\webview_session_methodology.md
+
+## S2. 경로 참조
+- ✅ shared/scripts/scan_auth_access_control.py  (첫 참조: SKILL.md)
+- ✅ references/modules/m0_auth_recon.md  (첫 참조: SKILL.md)
+- ✅ references/modules/m1_authn.md  (첫 참조: SKILL.md)
+- ✅ references/modules/m2_authz_acl.md  (첫 참조: SKILL.md)
+- ✅ references/modules/m3_stepup_mfa.md  (첫 참조: SKILL.md)
+- ✅ references/modules/m4_logic_race.md  (첫 참조: SKILL.md)
+- ✅ references/modules/m5_webview_client.md  (첫 참조: SKILL.md)
+- ✅ shared/references/task_prompts/task_11_asset_identification.md  (첫 참조: SKILL.md)
+- ✅ references/task_prompts/task_26_auth_review.md  (첫 참조: SKILL.md)
+- ✅ references/dast_candidates.md  (첫 참조: SKILL.md)
+- ✅ references/methodology/auth_methodology.md  (첫 참조: SKILL.md)
+- ✅ references/methodology/acl_methodology.md  (첫 참조: SKILL.md)
+- ✅ references/methodology/race_condition_methodology.md  (첫 참조: SKILL.md)
+- ✅ references/methodology/webview_session_methodology.md  (첫 참조: SKILL.md)
+- ✅ shared/references/workflow.md  (첫 참조: SKILL.md)
+- ✅ shared/references/output_schemas.md  (첫 참조: SKILL.md)
+- ✅ shared/references/severity_criteria.md  (첫 참조: SKILL.md)
+- ✅ shared/references/vuln_taxonomy.md  (첫 참조: SKILL.md)
+- ✅ shared/references/cross_verification.md  (첫 참조: SKILL.md)
+- ✅ shared/references/manual_review_prompt.md  (첫 참조: SKILL.md)
+- ✅ shared/references/finding_writing_guide.md  (첫 참조: SKILL.md)
+- ✅ shared/references/tooling.md  (첫 참조: SKILL.md)
+- ✅ shared/references/large_repo_multi_module.md  (첫 참조: SKILL.md)
+- ✅ shared/references/unsupported_lang_targets.md  (첫 참조: SKILL.md)
+- ✅ shared/references/llm_data_cleansing_policy.md  (첫 참조: SKILL.md)
+- ✅ shared/references/phase_c_cleansing.md  (첫 참조: SKILL.md)
+- ✅ sec-scan-auth/SKILL.md  (첫 참조: commands)
+- ✅ sec-scan-auth/references/task_prompts/task_26_auth_review.md  (첫 참조: commands)
+- ✅ sec-scan-auth/references/modules/m0_auth_recon.md  (첫 참조: commands)
+- ✅ sec-scan-data/references/task_prompts/task_25_data_protection.md  (첫 참조: task_26)
+
+## S3. 모듈 헤더 · S4. category / ID 접두어
+- ✅ m1_authn: 실행 조건
+- ✅ m1_authn: Auto-Scan 연결
+- ✅ m1_authn: finding category
+- ✅ m1_authn: ID 접두어
+- ✅ m1_authn: category AUTH_BYPASS
+- ✅ m1_authn: category SESSION_TOKEN_EXPOSURE
+- ✅ m1_authn: category INTERNAL_API_EXPOSURE
+- ✅ m1_authn: ID 접두어 AUTH-BYP ∈ task_26 ID 규칙
+- ✅ m1_authn: ID 접두어 AUTH-SESS ∈ task_26 ID 규칙
+- ✅ m1_authn: ID 접두어 AUTH-IAE ∈ task_26 ID 규칙
+- ✅ m2_authz_acl: 실행 조건
+- ✅ m2_authz_acl: Auto-Scan 연결
+- ✅ m2_authz_acl: finding category
+- ✅ m2_authz_acl: ID 접두어
+- ✅ m2_authz_acl: category IDOR
+- ✅ m2_authz_acl: category PRIVILEGE_ESCALATION
+- ✅ m2_authz_acl: category BROKEN_ACCESS_CONTROL
+- ✅ m2_authz_acl: category IP_ACL_BYPASS
+- ✅ m2_authz_acl: category INTERNAL_API_EXPOSURE
+- ✅ m2_authz_acl: ID 접두어 AUTH-IDOR ∈ task_26 ID 규칙
+- ✅ m2_authz_acl: ID 접두어 AUTH-PRIV ∈ task_26 ID 규칙
+- ✅ m2_authz_acl: ID 접두어 AUTH-BAC ∈ task_26 ID 규칙
+- ✅ m2_authz_acl: ID 접두어 AUTH-IPACL ∈ task_26 ID 규칙
+- ✅ m2_authz_acl: ID 접두어 AUTH-IAE ∈ task_26 ID 규칙
+- ✅ m3_stepup_mfa: 실행 조건
+- ✅ m3_stepup_mfa: Auto-Scan 연결
+- ✅ m3_stepup_mfa: finding category
+- ✅ m3_stepup_mfa: ID 접두어
+- ✅ m3_stepup_mfa: category PIN_REVERIFICATION_MISSING
+- ✅ m3_stepup_mfa: ID 접두어 AUTH-PIN ∈ task_26 ID 규칙
+- ✅ m4_logic_race: 실행 조건
+- ✅ m4_logic_race: Auto-Scan 연결
+- ✅ m4_logic_race: finding category
+- ✅ m4_logic_race: ID 접두어
+- ✅ m4_logic_race: category RACE_CONDITION
+- ✅ m4_logic_race: ID 접두어 AUTH-RACE ∈ task_26 ID 규칙
+- ✅ m5_webview_client: 실행 조건
+- ✅ m5_webview_client: Auto-Scan 연결
+- ✅ m5_webview_client: finding category
+- ✅ m5_webview_client: ID 접두어
+- ✅ m5_webview_client: category SESSION_TOKEN_EXPOSURE
+- ✅ m5_webview_client: ID 접두어 AUTH-SESS ∈ task_26 ID 규칙
+
+## S5. 판정 문구 category / severity
+- 판정 문구 58건 검사
+- ✅ 전건 허용값
+
+## S6. 모듈·절 교차 참조
+- 참조 74건 검사, 오류 0건
+- M0 헤딩: R-1, R-2, R-3, R-4, R-5, R-6, R-7
+- M1 헤딩: A-1, A-2, A-6
+- M2 헤딩: A-3, A-5, B-1, B-2, B-3, B-4
+- M3 헤딩: C-1, C-2, C-3
+- M4 헤딩: D-1, D-2, D-3, D-4, D-5, D-6, D-7, D-8, D-9
+- M5 헤딩: E-0, E-1, E-2, E-3, E-4, E-5, E-6
+
+## S7. --skip 값
+- 스크립트 choices: ['aclcoverage', 'idor', 'ipacl', 'permitall', 'pin', 'session', 'testbypass', 'toctou']
+- ✅ --skip aclcoverage
+- ✅ --skip idor
+- ✅ --skip ipacl
+- ✅ --skip permitall
+- ✅ --skip pin
+- ✅ --skip session
+- ✅ --skip testbypass
+- ✅ --skip toctou
+
+## S8. summary_auth.md 섹션
+- ✅ 「2차 인증·문자 인증 코드 신호」 ∈ SKILL.md summary 템플릿
+- ✅ 「동적 확인 후보」 ∈ SKILL.md summary 템플릿
+- ✅ 「모듈별 판정 요약」 ∈ SKILL.md summary 템플릿
+- ✅ 「인증 아키텍처 요약」 ∈ SKILL.md summary 템플릿
+- (summary 외 참조) 「M1 판정 요약표」
+- (summary 외 참조) 「R-7. 재사용 조건」
+- (summary 외 참조) 「findings_AUTH.json 생성」
+- (summary 외 참조) 「완료 조건 자가 검증」
+- (summary 외 참조) 「컨텍스트」
+- (summary 외 참조) 「판정 기준」
+
+## S9. 출력 스키마 — validate_findings.py (v1 대비 신규 오류 여부)
+- v1 형태 샘플: exit=1, 오류 2건
+-   (기존 갭) [findings[0]] category 비표준값: 'IDOR' — vuln_taxonomy.md 참조 (예: SQL인젝션, Persistent XSS)
+-   (기존 갭) [findings[0]] finding_id 형식 오류: 'AUTH-001' (허용: INJ-001, XSS-003, FILE-002, DATA-007, SCA-001)
+- ✅ v2 형태 샘플: 신규 오류 0건 (source_module / verification_status / summary.needs_dynamic_verification 허용)
+
+## S10. v1 대비 v2에서 사라진 라인 (정보성 — CHANGES 검토용)
+- **SKILL.md**: v2에 없는 라인 26건
+-   L3: description: Modularized SAST skill for Authentication/Authorization/Access Control diagnosis — IDOR, admin/batch privilege escalation, global auth bypass (Fail
+-   L10: 이 skill은 `sec-audit-static` 전체 파이프라인에서 **인증/인가 및 접근제어(IDOR / 관리자·배치 권한탈취 / 인증우회 / PIN 재검증 / 세션·토큰 노출 / ACL / TOCTOU)** 진단만을 담당하는 모듈입니다.
+-   L20: **로컬 (이 skill 전용)**
+-   L22: - `references/task_prompts/task_26_auth_review.md` - 인증/인가/ACL/TOCTOU LLM 검토 절차 (IDOR/권한탈취/AUTH_BYPASS/PIN/세션토큰노출/ACL/IP_ACL_BYPASS/내부API노출/RACE_CONDITION 판정기준)
+-   L55: > **어떠한 확인 질문도 하지 않는다.**
+-   L57: > - 자산 식별 → Auto-Scan → LLM-Check 전 구간을 중단 없이 진행한다.
+-   L66: - **프론트엔드 전용 repo(`.java`/`.kt` 파일 0건)이면 이 skill의 Auto-Scan/LLM-Check Phase 전량 skip** — 인증/인가/ACL/TOCTOU는 백엔드 서버 측 관심사이므로 프론트엔드 대응 진단 항목 없음. 결과에 "해당없음(프론트엔드 rep
+-   L67: - PHP 등 미지원 언어이면 Auto-Scan Phase skip 후 기록
+-   L74: --api-inventory state/<prefix>/api_scan.json
+-   L91: > 보상 트랜잭션 미구현(P8)은 흐름 분석이 필요해 정규식 자동탐지 정확도가 낮다.
+-   L92: > `references/task_prompts/task_26_auth_review.md` Section C의 grep 절차로 LLM-Check 단계에서 직접 확인한다.
+-   L96: LLM 검토 절차는 `references/task_prompts/task_26_auth_review.md` 전체 절차 준수.
+-   L98: **LLM-Check Phase — 교차검증 + 수동 심층진단 (LLM)**
+-   L99: - **LLM-Check Phase 1** (자동판정 "취약"/"정보" 후보 건): `shared/references/cross_verification.md` LLM-Check Phase 1 절차
+-   L100: - IDOR/RACE_CONDITION 후보는 반드시 코드 직접 확인 후 TP/FP 판정 (자동스캔은 후보 탐지만 수행)
+-   L101: - FP는 `evidence_trail[]`로 이동
+-   L102: - **LLM-Check Phase 2** (자동탐지 불가 항목 — Auth 5-6/ACL 4-3 Vuln1-3/Race P2·P3·P6·P8·P9): `shared/references/cross_verification.md` LLM-Check Phase 2 + `manual_revie
+-   L103: - `task_26_auth_review.md`에 명시된 grep 절차로 수동 심층진단 수행
+-   L104: - 출력: `diagnosis_method: "수동진단(LLM)"` + `manual_review_note`
+-   L141: | ID | 제목 | 위험도 | 카테고리 | 파일:라인 | 판정 | 진단방법 |
+-   L143: | AUTH-001 | IDOR — 주문 취소 API mbrId 세션 대조 누락 | 4 고위험 | IDOR | src/.../OrderController.java:88 | 취약 | 교차검증(수동) |
+-   L174: d = json.loads(findings.read_text())
+-   L200: 1. 이 세션에서 `testbed/<repo>/` 경로를 Read 도구로 접근한 파일 목록 정리 (Phase 1 / Phase 3 구분)
+-   L220: 접근파일: N건 (Phase 1: N / Phase 3: N)
+-   L225: Phase C-1 완료 후 `/sec-review` 로 인터랙티브 정/오탐 판정을 진행한다.
+-   L231: - `references/task_prompts/task_26_auth_review.md`
+- **task_26_auth_review.md**: v2에 없는 라인 78건
+-   L1: ## Task: 2-6 인증/인가/접근제어/동시성 검토 (LLM 수동분석 보완)
+-   L4: **입력 파일**: `state/<prefix>/task26_result.json` (scan_auth_access_control.py 자동스캔 결과)
+-   L5: **출력 파일**: `state/<prefix>/task26_llm.json` (LLM 수동분석 보완 — supplemental)
+-   L8: 이 Task는 3개 서브섹션으로 구성된다:
+-   L9: - **A. 인증/세션/IDOR** — @Session, 전역 인증우회, PIN 재검증, IDOR, 세션/토큰 전달구조
+-   L10: - **B. 접근제어/ACL** — Spring Security ACL, 커스텀 @Acl, IP 기반 ACL 우회, 전체 ACL 커버리지
+-   L11: - **C. TOCTOU/동시성** — @Transactional 범위, SELECT-then-Act, FOR UPDATE, 예외 묵살, 배치 동시성
+-   L14: > 이 Task는 세션/어노테이션 기반 인증·인가·IP ACL·동시성 제어만 다룬다. JWT/CORS/DTO 관련 코드를 발견해도 finding을 생성하지 말고 `sec-scan-data` 영역임을 `manual_review_note`에만 메모한다.
+-   L20: #### [RULE-1] IDOR / RACE_CONDITION 후보 — 반드시 코드 직접 확인 후 TP/FP 판정
+-   L22: 자동스캔의 `scan_idor_candidates` / `scan_toctou_patterns`는 **정규식 기반 후보 탐지**이며 `result: "정보"` + `needs_review: true`로 고정 출력된다. LLM은 각 후보에 대해:
+-   L24: 2. 서비스 레이어까지 추적하여 세션 ID 대조 여부(IDOR) 또는 `@Transactional`/`FOR UPDATE` 존재 여부(RACE_CONDITION)를 확인한다.
+-   L29: #### [RULE-2] Auth 5-6 / ACL 4-3 Vuln1-3 / Race P2·P3·P6·P8·P9 — 자동탐지 불가 항목 수동 심층진단 필수
+-   L31: 아래 항목은 정규식 자동탐지 정확도가 낮아 스크립트가 후보조차 만들지 않거나 낮은 confidence로만 탐지한다. Section A/B/C에 명시된 grep 절차를 **LLM이 직접 실행**하여 코드를 확인한다:
+-   L32: - Auth 5-6 (세션/토큰 전달구조 분류) — 전체가 수동 판단
+-   L33: - ACL 4-3 Vuln1 (Host Header Spoofing), Vuln3 (X-Forwarded-For 미처리) — 흐름 추적 필요
+-   L34: - Race P2 (FOR UPDATE 부재), P3 (REQUIRES_NEW 단독), P6 (Redis 가드 부재), P8 (보상 트랜잭션 미구현), P9 (배치 최상위 트랜잭션 부재)
+-   L38: `evidence.code_snippet` 및 `manual_review_note`에 아래 정보 원문 절대 포함 금지:
+-   L42: | 세션ID·토큰·시크릿 원문 | `[REDACTED]` 로 치환 | `sessionId=[REDACTED]` |
+-   L46: | 변수명·파일경로·라인번호 | 마스킹 불필요 | — |
+-   L48: > ACL 4-3 findings는 `allowedIP` 목록에 실제 내부 IP가 포함되는 경우가 많다 — `code_snippet` 기재 전 반드시 `[REDACTED_IP]` 치환.
+-   L54: **권장 섹션 이름**: `## 무인증/무ACL 배치·관리자 엔드포인트 목록 (N건)`
+-   L77: - 배치/관리자 컨트롤러 커버리지 감사(B-4)는 스코프 내 컨트롤러만 대상으로 한다.
+-   L85: ├─ scan_missing_session_annotation  ─┐
+-   L86: ├─ scan_test_session_bypass          │→ A. 인증/세션/IDOR
+-   L87: ├─ scan_pin_reverification           │
+-   L88: ├─ scan_idor_candidates             ─┘
+-   L89: ├─ scan_permitall_antmatchers       ─┐
+-   L90: ├─ scan_ip_acl_bypass                │→ B. 접근제어/ACL
+-   L91: ├─ scan_missing_acl_admin_batch     ─┘
+-   L92: └─ scan_toctou_patterns             ──→ C. TOCTOU/동시성
+-   L94: LLM 교차검증 + 수동 심층진단 (grep 절차 직접 실행)
+-   L101: ## A. 인증/세션/IDOR
+-   L147: ### A-4. PIN/비밀번호 서버측 재검증 (Auth 5-4)
+-   L152: grep -rn "class.*Pay.*Controller\|class.*Purchase.*Controller\|class.*Order.*Controller" src/ --include="*.java" --include="*.kt" -l | xargs grep -L "pinConfirm
+-   L153: grep -rn "class.*Request\|data class.*Request" src/ --include="*.java" --include="*.kt" | grep -i "pay\|purchase\|order\|join" | awk -F: '{print $1}' | sort -u 
+-   L156: **판정**: 결제/고액/정보변경 API에서 `pinConfirmationDate`(또는 동등 필드) 시간 재검증 없음 → **PIN_REVERIFICATION_MISSING, 취약, High**. Request DTO에 PIN/password 필드 자체가 없음(UI 레벨만 강제) → 
+-   L190: ## B. 접근제어/ACL
+-   L255: ## C. TOCTOU/동시성
+-   L257: ### C-1. 핵심 API 식별 (Race STEP 1)
+-   L263: 이후 C-2~C-7을 식별된 각 엔드포인트에 순서대로 적용한다.
+-   L265: ### C-2. @Transactional 범위 분석 (Race STEP 2, P1/P3)
+-   L271: `@Transactional` 없이 검증(SELECT)+실행(INSERT/UPDATE)이 한 메서드에 존재 → **RACE_CONDITION(P1), 취약, High**. 외부 메서드 `@Transactional` 없음 + 내부만 `REQUIRES_NEW` → **RACE_CONDITI
+-   L273: ### C-3. SELECT-then-Act 패턴 (Race STEP 3, P2/P4)
+-   L280: count/exists 체크 후 INSERT, 원자성 보장 없고 UNIQUE CONSTRAINT도 없음 → **RACE_CONDITION(P4), 취약, High**. `@Transactional`이 있어도 SELECT에 `FOR UPDATE` 없으면 동시 읽기 허용 상태 — C-4로 
+-   L282: ### C-4. SELECT FOR UPDATE 사용 여부 (Race STEP 4)
+-   L286: grep -rn "FOR UPDATE\|for update\|NOWAIT\|SKIP LOCKED" src/ --include="*.kt" --include="*.java" --include="*.xml" --include="*.sql"
+-   L289: 동시 요청이 같은 행을 검증 후 수정하는데 FOR UPDATE/분산락/UNIQUE CONSTRAINT 전부 부재 → C-2/C-3 판정에 반영.
+-   L291: ### C-5. 예외 묵살 패턴 (Race STEP 5, P5/P8)
+-   L299: `catch` 블록에 `throw`/`return` 없이 후속 로직 계속 실행 → **RACE_CONDITION(P5), 취약, Medium**. 외부 API(결제/포인트) 호출이 `@Transactional` 없는 취소/환불 메서드에서 DB 저장과 혼재(외부 API는 롤백 불가) → 
+-   L301: ### C-6. 배치/정산 API 동시성 제어 (Race STEP 6, P7/P9)
+-   L312: 배치 `@Transactional` 없는 `forEach`/`map` 반복 처리(건당 원자성 보장 없음) → **RACE_CONDITION(P7), 취약, High**. Redis 기록만 있고 get→check 가드 없음(중복 방지 효과 없음) → **RACE_CONDITION(P6),
+-   L314: ### C-7. DB 수준 안전장치 확인 (Race STEP 7)
+-   L320: UNIQUE CONSTRAINT/`@Version`/FOR UPDATE/분산락 중 무엇도 없는 경우 C-2~C-6 판정을 확정한다. 하나라도 있으면 해당 안전장치가 실질적 가드로 동작하는지(예외 처리 유무, get→check 순서) 확인 후 완화 여부를 `manual_review_not
+-   L327: □ A-5 IDOR / C-2~C-7 RACE_CONDITION 후보 전건에 대해 Read 툴로 코드 직접 확인 완료
+-   L328: - 미확인 상태로 needs_review: true 유지한 채 finding 생성 금지 (RULE-1)
+-   L330: □ 자동탐지 불가 항목(RULE-2) 전체 수동 확인 완료
+-   L331: - Auth 5-6, ACL 4-3 Vuln1/Vuln3, Race P2/P3/P6/P8/P9 각각 grep 절차 실행 후 판정 기재
+-   L333: □ B-4 전체 ACL 커버리지 감사 결과 review_note에 마크다운 테이블 섹션(RULE-4) 작성
+-   L335: □ IP 관련 evidence.code_snippet 전체 [REDACTED_IP] 마스킹 확인 (RULE-3)
+-   L337: □ JWT/CORS/DTO 관련 코드 발견 시 finding 미생성, sec-scan-data 경계 노트만 기재 확인
+-   L348: | **Critical** | 전역 인증 강제 완전 부재, 결제/취소 API @Session 누락, 테스트 세션 우회 비게이팅, 인증서버 Fail-Open, 배치/관리자 API 무인증+무ACL |
+-   L349: | **High** | IDOR(취소/삭제/개인정보), PIN 재검증 누락, IP ACL 우회(Host spoofing/contains 부분매칭/XFF 미처리), 내부 API @Acl 누락, RACE_CONDITION P1/P3/P4/P7/P8/P9 |
+-   L350: | **Medium** | `anyRequest().permitAll()` 단일방어선, ACL local/dev 비활성화(외부 비접근 서버), csrf 근거불명 비활성화, 세션 URL노출, RACE_CONDITION P2/P5/P6 |
+-   L351: | **Low** | IDOR(개인정보 미포함 조회), 과도한 permitAll() 범위 |
+-   L352: | **Info** | 세션/토큰 전달구조 분류 참고사항, DB 안전장치 부분 적용 |
+-   L358: > **`affected_endpoints` 작성 규칙 (전체 Task 공통)**: `shared/references/task_prompts/task_25_data_protection.md`의 규칙과 동일 — `method`/`path`(필수)/`controller`/`descripti
+-   L400: "race_condition_candidates_fp": 0
+-   L402: "consolidation_note": "자동스캔 후보 N건 중 IDOR M건/RACE_CONDITION K건 코드 확인 후 확정. 원본은 state/<prefix>/task26_result.json 보존.",
+-   L411: - `AUTH-BYP-NNN` — AUTH_BYPASS (전역 인증우회/Fail-Open/테스트세션)
+-   L413: - `AUTH-SESS-NNN` — SESSION_TOKEN_EXPOSURE
+-   L427: - 민감정보(세션ID/토큰/내부 IP/PII) 원문 포함 금지 → RULE-3 마스킹 규칙 적용
+-   L439: - `evidence.code_snippet`: Read 툴로 직접 읽은 실제 코드만 허용
+-   L453: - **TP 확정**: description, code_snippet, evidence 보강 (IDOR/RACE_CONDITION 후보는 RULE-1 절차로 코드 직접 확인)
+-   L454: 3. Auto-Scan 미탐지 취약점(FN) 발견 시 신규 finding 추가: `fn_detected: true`, `source: "llm-check(fn-detected)"`
+-   L455: 4. finding_id 재부여: `AUTH-001` 순번 (심각도 내림차순)
+-   L456: 5. `state/<prefix>/findings_AUTH.json` 저장
+-   L465: "fn_disclaimer": "Auto-Scan은 정적 패턴 기반이므로 흐름 분석이 필요한 FOR UPDATE 부재(P2)/REQUIRES_NEW 단독(P3,P9)/Redis 가드부재(P6)/보상트랜잭션 미구현(P8), Host Header Spoofing(ACL 4-3 Vuln1),
+-   L467: "summary": { "total": 0, "취약": 0, "정보": 0, "fn_detected": 0 },
+- **command_sec-scan-auth.md**: v2에 없는 라인 4건
+-   L3: description: 인증/인가/접근제어/동시성(IDOR, 권한탈취, ACL, TOCTOU) 진단
+-   L16: 3. `sec-scan-auth/references/task_prompts/task_26_auth_review.md` 읽기
+-   L17: 4. 공유 references (`shared/references/`) 필요 항목 읽기
+-   L18: 5. SKILL.md Phase 1 → 2 → 3 순서대로 자율 완주
+
+## S11. 식별정보 잔존 (staging 전체)
+- ✅ 없음
+
+## 종합
+- 오류: 0
+- 판정: PASS ✅

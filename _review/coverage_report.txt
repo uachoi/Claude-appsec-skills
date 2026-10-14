@@ -1,0 +1,46 @@
+# Coverage Verification Report
+
+대상 결과물: sec-scan-auth\references\dast_candidates.md, sec-scan-auth\references\methodology\acl_methodology.md, sec-scan-auth\references\methodology\auth_methodology.md, sec-scan-auth\references\methodology\intentional_exclusions.md, sec-scan-auth\references\methodology\race_condition_methodology.md, sec-scan-auth\references\methodology\webview_session_methodology.md, sec-scan-auth\references\modules\m0_auth_recon.md, sec-scan-auth\references\modules\m1_authn.md, sec-scan-auth\references\modules\m2_authz_acl.md, sec-scan-auth\references\modules\m3_stepup_mfa.md, sec-scan-auth\references\modules\m4_logic_race.md, sec-scan-auth\references\modules\m5_webview_client.md, sec-scan-auth\references\task_prompts\task_26_auth_review.md, sec-scan-auth\SKILL.md
+
+
+## D:\5. Skills\4. AUTH(DAST)_VULN_ANALYSIS.md
+- md5: b104c7cfe7a37d2cb4cb5797cb4ded9f
+- 검증 라인: 394 / 누락: 0 / 제외(사유 기재): 7
+  - 제외 L9-16: 목차(TOC) — 재구성된 파일 구조로 대체 [D-STRUCT]
+
+## D:\5. Skills\MySkills\5. AUTH_VULN_ANALYSIS.md
+- md5: b104c7cfe7a37d2cb4cb5797cb4ded9f
+- 중복 쌍 md5 동일: True → 앞선 동일 파일 검증으로 갈음
+
+## D:\5. Skills\5. webview-auth-session-analysis.md
+- md5: 33961e596ab09f63c0911663fbd7240e
+- 검증 라인: 376 / 누락: 0 / 제외(사유 기재): 0
+
+## D:\5. Skills\MySkills\WEBVIEW_SESSION_ANALYSIS.md
+- md5: 33961e596ab09f63c0911663fbd7240e
+- 중복 쌍 md5 동일: True → 앞선 동일 파일 검증으로 갈음
+
+## D:\5. Skills\MySkills\ACL_Analysis.md
+- md5: 990e6c31b2b6f5e34b24c28cf0d475d3
+- 검증 라인: 155 / 누락: 0 / 제외(사유 기재): 0
+
+## D:\5. Skills\MySkills\Auth_Analysis.md
+- md5: 11117d223b18302de7132c802c36d0b8
+- 검증 라인: 250 / 누락: 0 / 제외(사유 기재): 0
+
+## D:\5. Skills\MySkills\6. RACE_CONDITION_ANALYSIS.md
+- md5: 8616d87f4b6cfcf2c476fd55e5f454db
+- 검증 라인: 357 / 누락: 0 / 제외(사유 기재): 7
+  - 제외 L9-16: 목차(TOC) — 재구성된 파일 구조로 대체 [D-STRUCT]
+
+## 의도적 제외 목록 정합성 (intentional_exclusions.md 표 A)
+- 표 A 항목: 2건
+- 생성기 제외 목록 ⊆ 표 A ✅
+
+## 익명화 잔존 검사
+- 잔존 식별정보: 없음 ✅
+
+## 종합
+- 검증 라인 합계: 1532
+- 누락 합계: 0
+- 판정: PASS ✅

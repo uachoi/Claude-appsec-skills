@@ -218,3 +218,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- sec-scan-auth v2 ---
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# 로컬 전용 — 고객사 식별정보 원문(익명화 치환표·금지어)
+_review/tools/anon_map.local.json
+# 세션 이어하기 메모 (로컬 경로·대화 기록 경로 포함)
+_review/HANDOFF.md
